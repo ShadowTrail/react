@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/e-commerce/static/css/main.e6c13ad2.css",
+    "main.js": "/e-commerce/static/js/main.b01b0bdf.js",
+    "static/js/787.7157d651.chunk.js": "/e-commerce/static/js/787.7157d651.chunk.js",
+    "static/media/dress1.jpg": "/e-commerce/static/media/dress1.56eb559a953fb18ccf7b.jpg",
+    "static/media/popular1.jpg": "/e-commerce/static/media/popular1.aaa5930100471cbf0e55.jpg",
+    "static/media/new1.jpg": "/e-commerce/static/media/new1.e5b7b18dfa8b5b35dacf.jpg",
+    "static/media/new2.jpg": "/e-commerce/static/media/new2.bd65ab6ab38f75eb65db.jpg",
+    "static/media/dress2.jpg": "/e-commerce/static/media/dress2.04e3974646af46b6b1ca.jpg",
+    "static/media/dress3.jpg": "/e-commerce/static/media/dress3.5f718537d5cba58d22dd.jpg",
+    "static/media/top1.jpg": "/e-commerce/static/media/top1.eb2cab1e9f2574f1eba3.jpg",
+    "static/media/new3.jpg": "/e-commerce/static/media/new3.6006af4b44e05edb239f.jpg",
+    "static/media/new5.jpg": "/e-commerce/static/media/new5.7685faa85a666e555702.jpg",
+    "static/media/top4.jpg": "/e-commerce/static/media/top4.3bd360ab57b76ee44567.jpg",
+    "static/media/top2.jpg": "/e-commerce/static/media/top2.6fa2796994cc0c17ad8b.jpg",
+    "static/media/popular2.jpg": "/e-commerce/static/media/popular2.c2315c63bfc31fe59104.jpg",
+    "static/media/top5.jpg": "/e-commerce/static/media/top5.5304df4097e5b15f2b64.jpg",
+    "static/media/top3.jpg": "/e-commerce/static/media/top3.dd5378946a00f2a42c97.jpg",
+    "static/media/popular3.jpg": "/e-commerce/static/media/popular3.019ddf551039a6f31000.jpg",
+    "static/media/popular4.jpg": "/e-commerce/static/media/popular4.e6bc7cc62c3e26db417b.jpg",
+    "static/media/shirt2.jpg": "/e-commerce/static/media/shirt2.ddf7835bf898454ae5c0.jpg",
+    "static/media/popular5.jpg": "/e-commerce/static/media/popular5.19507ba91a9c5743e4e0.jpg",
+    "static/media/shirt3.jpg": "/e-commerce/static/media/shirt3.19291532568f4ebee818.jpg",
+    "static/media/shirtCAT.jpg": "/e-commerce/static/media/shirtCAT.e6358d8b770d89dbcb0e.jpg",
+    "index.html": "/e-commerce/index.html",
+    "main.e6c13ad2.css.map": "/e-commerce/static/css/main.e6c13ad2.css.map",
+    "main.b01b0bdf.js.map": "/e-commerce/static/js/main.b01b0bdf.js.map",
+    "787.7157d651.chunk.js.map": "/e-commerce/static/js/787.7157d651.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.b01b0bdf.js"
+  ]
+}
