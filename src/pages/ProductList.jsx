@@ -3,18 +3,21 @@ import Footer from "../components/Footer";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import { mobile } from "../responsive";
+import { useEffect, useState } from "react";
+import DefaultProducts from "../components/DefaultProduct";
+import DescProducts from "../components/DescProducts";
 
-const Container = styled.div``
+const Container = styled.div``;
 const Title = styled.h1`
-       margin: 40px;
+  margin: 40px;
 `;
 const FilterContainer = styled.div`
-       display: flex;
-       justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 `;
 const Filter = styled.div`
   margin: 40px;
-  ${mobile({ width: "0px 20px",display:"flex",flexDirection:"column" })}
+  ${mobile({ width: "0px 20px", display: "flex", flexDirection: "column" })}
 `;
 const FilterText = styled.span`
   font-size: 22px;
@@ -29,9 +32,25 @@ const Select = styled.select`
   ${mobile({ margin: "10px 0px" })}
 `;
 const Option = styled.option`
-       font-size: 18px;
+  font-size: 18px;
 `;
 const ProductList = () => {
+  const [sorted, setSorted] = useState(false);
+  const [defaulte, setdefaulte] = useState(false);
+  const [des, setDes] = useState(false);
+
+  const [asc, setAsc] = useState(false);
+  useEffect(() => {
+   
+
+    sorted === "default" ? setdefaulte(true) : setdefaulte(false);
+    sorted === "asc" ? setAsc(true) : setAsc(false);
+    sorted === "des" ? setDes(true) : setDes(false);
+  }, [sorted]);
+  const handleOnChange = (e) => {
+    setSorted(e.target.value);
+  };
+
   return (
     <Container>
       <Title>Our Products</Title>
@@ -62,18 +81,24 @@ const ProductList = () => {
         </Filter>
         <Filter>
           <FilterText>Sort Products</FilterText>
-          <Select>
-            <Option selected>Newest</Option>
-            <Option>Price (asc)</Option>
-            <Option>Price (des)</Option>
+          <Select value={sorted} onChange={handleOnChange}>
+            <Option value="default" selected>
+              Newest
+            </Option>
+            <Option value="asc">Price (asc)</Option>
+            <Option value="des">Price (des)</Option>
           </Select>
         </Filter>
       </FilterContainer>
-      <Products />
+      {/* if asc then render in asc*/}
+      {defaulte && <DefaultProducts />}
+      {asc && <Products />}
+      {des && <DescProducts />}
+
       <Newsletter />
       <Footer />
     </Container>
   );
-}
+};
 
-export default ProductList
+export default ProductList;
