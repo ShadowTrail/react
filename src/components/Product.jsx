@@ -1,8 +1,12 @@
-import { ShoppingCartOutlined, Search, FavoriteBorder } from "@mui/icons-material";
+import {
+  ShoppingCartOutlined,
+  Search,
+  FavoriteBorder,
+} from "@mui/icons-material";
 import styled from "styled-components";
 
 const Info = styled.div`
-opacity: 0;
+  opacity: 0;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -31,8 +35,8 @@ const Container = styled.div`
   justify-content: center;
   background-color: #f5fbfd;
   position: relative;
-  
-  &:hover ${Info}{
+
+  &:hover ${Info} {
     opacity: 1;
   }
 `;
@@ -55,23 +59,29 @@ const Icon = styled.a`
   }
 `;
 
-const Product = ({item}) => {
+const Product = ({ item }) => {
   return (
-    <Container>
-      <Image src={item.img} />
-      <Info>
-        <Icon href="/Product">
-          <ShoppingCartOutlined />
-        </Icon>
-        <Icon>
-          <Search />
-        </Icon>
-        <Icon>
-          <FavoriteBorder />
-        </Icon>
-      </Info>
-    </Container>
+    <div>
+      <Container>
+        <Image src={item.img} />
+        <Info>
+          <Icon href="/Product">
+            <ShoppingCartOutlined />
+          </Icon>
+          <Icon>
+            <Search />
+          </Icon>
+          <Icon>
+            <FavoriteBorder />
+          </Icon>
+        </Info>
+      </Container>
+      <div>
+        <h3>Item {item.id}</h3>
+        <h3>₹{item.price}</h3>
+      </div>
+    </div>
   );
-}
+};
 
 export default Product;

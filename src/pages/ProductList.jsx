@@ -35,7 +35,7 @@ const Option = styled.option`
   font-size: 18px;
 `;
 const ProductList = () => {
-  const [sorted, setSorted] = useState(false);
+  const [sorted, setSorted] = useState("default");
   const [defaulte, setdefaulte] = useState(false);
   const [des, setDes] = useState(false);
 
